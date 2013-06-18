@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=entries>
+{#   {% for entry in entries %}
+    <li><h2>{{ entry.hostname }}</h2>{{ entry.adress }}
+  {% else %}
+    <li><em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+ #}
+   	<li>{{ entries }}</li>
+  </ul>
+{% endblock %}
